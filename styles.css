@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Outfit";
+  position: relative;
+  background-color: rgb(255, 255, 255);
 }
 
 .clock {
@@ -31,4 +33,20 @@ span {
 
 .theme-change {
   position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px;
+  background-color: white;
+}
+
+.invert {
+  filter: invert();
 }

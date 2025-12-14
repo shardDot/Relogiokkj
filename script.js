@@ -1,4 +1,10 @@
 const latestStatus = document.querySelector("#latest-status");
+const themeChanger = document.querySelector(".theme-change");
+
+themeChanger.addEventListener("click", function () {
+  document.querySelector("html").classList.toggle("invert");
+});
+
 latestStatus.textContent = `Latest visit: ${localStorage.getItem(
   "latestVisited"
 )}`;
